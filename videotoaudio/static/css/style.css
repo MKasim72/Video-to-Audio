@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+   body{
+    background-color:#ced5f2;
+  } 
+  input[type="file"]{
+    display:none;
+  }
+
+  label{
+    display:inline-block;
+    text-transform:uppercase;
+    color:white;
+    background:blue;
+    padding:15px 40px;
+    font-size:18px;
+    letter-spacing:1.5px;
+    user-select:none;
+    cursor:pointer;
+    box-shadow: 5px 15px 25px rgba(0,0,0,0.35);
+    border-radius:3px;
+    transition:transform 0.3s;
+
+  }
+
+  label i {
+    font-size:20px;
+    margin-right:10px;
+  }
+
+  label:active{
+    transform:scale(0.9);
+  } 
+  .center-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* {% comment %} border:2px solid blue;
+    border-radius: 25%;
+    box-shadow: 5px 15px 25px rgba(0,0,0,0.35);  {% endcomment %} */
+  
+  }
+
+  .form_card{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   
+  }
+
+  .card_disp{
+    width: 120rem;
+    height:30rem;
+    border:2px solid black;
+    border-radius:5%;
+    box-shadow: 5px 15px 25px rgba(0,0,0,0.35);
+  }
+
+  li{
+    color:gray;
+    font-weight:bold;
+    font-size:20px;
+    margin-top:15px;
+    list-style-type:none
+  }
+
+  .main_steps{
+    color:blue;
+    margin-right:10px;  
+    font-size:30px;
+    background-color:lightblue;
+    border:px solid ;
+    border-radius:70%;
+  }
+
+  /* {% comment %} .how-to__description span {
+    position:absolute;
+    top:50%;
+    left:5px;
+    top:0;
+    background:#fff;
+    font-size:30px;
+    font-weight:400;
+    width:54px;
+    height:54px;
+    line-height:54px;
+    border-radius:50%;
+    text-align:center;
+    -webkit-box-shadow:0 0 25px rgba(0,0,0,.08);
+    box-shadow:0 0 25px rgba(0,0,0,.08);
+    background-color:#fff
+  } {% endcomment %} */
+
+  .how-to__description span{
+    position:absolute;
+    left:5px;
+    background:white;
+    font-size:30px;
+    font-weight:400;
+    width:54px;
+    height:54px;
+    border-radius:50%;
+    text-align:center;
+    background-color:white;
+    box-shadow:0 0 25px rgba(0,0,0,0.1);
+    top:0;
+    line-height:54px
+  }
+
+
+
+  
+    
+    .how-to__description{
+      color:#6f778e;
+      font-size:16px;
+      font-weight:400;
+      line-height:28px;
+      margin-bottom:10px;
+      padding:0;
+    }
+
+    .how-to__description li{
+      position:relative;
+      padding-left:80px;
+      margin-top:30px;
+      display:block;
+      min-height:45px
+
+    }
+
+    .rating{
+      color:#e1b41a;
+      font-size:25px;
+    }
+
+    .rate_card{
+      
+      border-radius:20px;
+      transition: transform 0.3s ;box-shadow:0.3s;
+      background:#fff;
+    }
+    
+    .rate_card:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .logo{
+      width:35px;
+      margin-top:-5px
+    }
+    
+    /* {% comment %} .how-to__description li:first-child{
+      margin-top:24px
+    } {% endcomment %} */
+
+    .user_img{
+      border-radius:50%;
+      padding:20px;
+    }
+
+    .main_card{
+        width:50rem;height:30rem;border:5px solid lightblue; border-radius:50px;box-shadow: 5px 15px 25px rgba(0,0,0,0.35);
+    }
+
+    .convert_img_video{
+        font-size:150px;
+        color:navy;margin-left:45px;margin-top:25px;
+    }
+
+    .convert_img_audio{
+        font-size:150px;color:purple;margin-left:-50px;margin-top:25px;
+    }
+
+    .convert_img_arrow_first{
+        font-size:60px;color:purple;margin-top:80px
+    }
+    .convert_img_arrow_second{
+    font-size:60px;color:navy;
+    }
+    .convert_btn{
+        display:flex;justify-content:center;margin-left:70px
+    }
+    .footer{
+        background:#fff
+    }
+
+
+@media (min-width:375px) and (max-width:667px){
+    
+    .main_card{
+        width: 20rem;
+        height: 30rem;
+        /* display: flex; */
+        /* justify-content: center; */
+        margin-left:22px ;
+    }
+    .Rating_section{
+        /* margin-left:20px ; */
+        display: flex;
+        justify-content: center;
+    }
+    .convert_img_video{
+        font-size: 100px;
+    }
+    .convert_img_audio{
+        font-size: 100px;
+        position: relative;
+        top: -245px;
+        left: 250px;
+    }
+    .convert_img_arrow_first{
+        font-size: 40px;
+        position: relative;
+        top:-140px ;
+        left:140px  
+    }
+
+    .convert_img_arrow_second{
+        font-size: 40px;
+        position: relative;
+        top:-140px;
+        left:130px
+    }
+    
+    .rate_card{
+        display: flex;
+        justify-content: center;
+        margin-left: 25px;
+    }
+
+    .form_card{
+        width: 20rem;
+
+    }
+    .convert_btn{
+        display: flex;
+        /* justify-content: center; */
+        margin-left: 80px;
+    }
+    .footer{
+        display: none;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
